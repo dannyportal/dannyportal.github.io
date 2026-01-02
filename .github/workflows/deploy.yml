@@ -27,14 +27,12 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: bentos-next/package-lock.json
+          cache-dependency-path: package-lock.json
       
       - name: Install dependencies
-        working-directory: ./bentos-next
         run: npm ci
       
       - name: Build
-        working-directory: ./bentos-next
         run: npm run build
       
       - name: Setup Pages
@@ -43,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './bentos-next/out'
+          path: './out'
 
   deploy:
     environment:
