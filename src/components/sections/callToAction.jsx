@@ -16,7 +16,13 @@ const CallToAction = () => {
                                 <p>Reach out and let's make it happen ✨. I'm also available for full-time or Part-time opportunities to push the boundaries of design and deliver exceptional work.</p>
                                 <div className="hero-btns">
                                     <Link href="/contact" className="theme-btn">Let's Talk  <i><RiDownloadLine size={16} /></i></Link>
-                                    <Link href="/about" className="theme-btn">View Resume <i><RiUserLine size={16} /></i></Link>
+                                    <a
+                                        href="/images/Danny%20Portal%20Resume.pdf"
+                                        className="theme-btn"
+                                        download
+                                    >
+                                        View Resume <i><RiUserLine size={16} /></i>
+                                    </a>
                                 </div>
                             </div>
                         </SlideUp>

@@ -12,8 +12,8 @@ const ContactOption = () => {
                             <div className="contact-icon">
                                 <i> <RiMapPinLine size={20} /></i>
                             </div>
-                            <h2>our office:</h2>
-                            <p>Jurain,Dhaka Bangladesh</p>
+                            <h2>Location:</h2>
+                            <p>Miami, Florida</p>
                         </div>
                     </SlideUp>
                     <SlideUp delay={3}>
@@ -22,16 +22,7 @@ const ContactOption = () => {
                                 <i> <RiPhoneLine size={20} /></i>
                             </div>
                             <h2>contact number:</h2>
-                            <p>+1234321321</p>
-                        </div>
-                    </SlideUp>
-                    <SlideUp delay={4}>
-                        <div className="single-contact wow fadeInUp" data-wow-delay=".6s">
-                            <div className="contact-icon">
-                                <i> <RiMailLine size={20} /></i>
-                            </div>
-                            <h2>Email us:</h2>
-                            <p>websitename@mail.com</p>
+                            <p>(802)459-1992</p>
                         </div>
                     </SlideUp>
                 </div>

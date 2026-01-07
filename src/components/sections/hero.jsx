@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Link from 'next/link';
-import { RiFacebookCircleFill, RiTwitterXLine, RiLinkedinFill, RiGithubLine, RiCircleFill, RiDownloadLine } from '@remixicon/react'
+import { RiLinkedinFill, RiGithubLine, RiCircleFill, RiDownloadLine } from '@remixicon/react'
 import PartnersMarquee from './partnersMarquee';
 import SlideUp from '@/utlits/animations/slideUp';
 import AboutContentWaves from "@/components/ui/aboutContentWaves";
@@ -24,10 +24,8 @@ const Hero = () => {
                                 <p>I am a Web Developer based in Miami, Florida with who specializes in Digital Production and Marketing.</p>
                                 <div className="about-social text-center">
                                     <ul>
-                                        <li><Link href=""><RiFacebookCircleFill size={20} /></Link></li>
-                                        <li><Link href=""><RiTwitterXLine size={20} /></Link></li>
-                                        <li><Link href=""><RiLinkedinFill size={20} /></Link></li>
-                                        <li><Link href=""><RiGithubLine size={20} /></Link></li>
+                                        <li><Link href="https://www.linkedin.com/in/dannyportal"><RiLinkedinFill size={20} /></Link></li>
+                                        <li><Link href="https://github.com/dannyportal"><RiGithubLine size={20} /></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -49,7 +47,13 @@ const Hero = () => {
                                     </ul>
                                 </div>
                                 <div className="hero-btns">
-                                    <Link href="/contact" className="theme-btn">Download CV <i><RiDownloadLine size={16} /></i> </Link>
+                                    <a
+                                        href="/images/Danny%20Portal%20Resume.pdf"
+                                        className="theme-btn"
+                                        download
+                                    >
+                                        Download CV <i><RiDownloadLine size={16} /></i>
+                                    </a>
                                 </div>
                             </div>
                         </SlideUp>

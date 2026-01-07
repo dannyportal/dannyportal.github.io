@@ -5,10 +5,14 @@ import BackgroundWaves from "@/components/ui/backgroundWaves";
 import Header from "@/components/sections/header";
 import CallToAction from "@/components/sections/callToAction";
 import Footer from "@/components/sections/footer";
+import MegaBuddy from "@/components/ui/megaBuddy";
 
 export const metadata = {
   title: "Danny Portal - Personal Portfolio",
   description: "Danny Portal - Personal Portfolio",
+  icons: {
+    icon: "/images/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -22,6 +26,7 @@ export default function RootLayout({ children }) {
         {children}
         <CallToAction />
         <Footer />
+        <MegaBuddy />
       </body>
     </html>
   );

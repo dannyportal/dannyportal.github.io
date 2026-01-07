@@ -1114,12 +1114,12 @@ html {
 
 .fixed-header .main-menu .navbar-collapse li a {
     padding: 0 14px;
-    border-radius: 999px;
+    border-radius: 12px;
 }
 
 .fixed-header .main-menu .navbar-collapse > ul {
     padding: 3px 10px;
-    border-radius: 999px;
+    border-radius: 12px;
     background: rgba(0, 0, 0, 0.55);
     border: 1px solid rgba(255, 255, 255, 0.15);
     -webkit-backdrop-filter: blur(6px);
@@ -2823,8 +2823,14 @@ body.loaded {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: transparent;
+    background: #0f1116;
     z-index: 99999999999999;
+}
+
+.preloader__image {
+    width: min(320px, 70vw);
+    height: auto;
+    display: block;
 }
 
 .preloader svg {
@@ -2861,6 +2867,20 @@ body.loaded {
 .load-text span:nth-child(3) {
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
+}
+
+.mega-buddy {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.mega-buddy img {
+    width: clamp(56px, 9vw, 120px);
+    height: auto;
+    display: block;
 }
 
 .load-text span:nth-child(4) {
