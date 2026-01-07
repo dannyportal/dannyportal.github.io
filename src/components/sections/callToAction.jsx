@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { RiDownloadLine } from '@remixicon/react'
+import { RiDownloadLine, RiUserLine } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
 
 const CallToAction = () => {
@@ -12,10 +12,11 @@ const CallToAction = () => {
                     <div className="col-lg-12">
                         <SlideUp>
                             <div className="about-content-part call-to-action-part text-center">
-                                <h2>Are You Ready to kickstart your project with a touch of magic?</h2>
+                                <h2>Looking for a web developer who blends strategy, design, and execution?</h2>
                                 <p>Reach out and let's make it happen ✨. I'm also available for full-time or Part-time opportunities to push the boundaries of design and deliver exceptional work.</p>
                                 <div className="hero-btns">
                                     <Link href="/contact" className="theme-btn">Let's Talk  <i><RiDownloadLine size={16} /></i></Link>
+                                    <Link href="/about" className="theme-btn">View Resume <i><RiUserLine size={16} /></i></Link>
                                 </div>
                             </div>
                         </SlideUp>

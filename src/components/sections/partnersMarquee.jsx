@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const PartnersMarquee = () => {
     return (
         <div className="about-content-part-bottom">
-            <h2>Company I Worked With</h2>
+            <h2>Brands Ive Worked With</h2>
             <div className="company-list">
                 <div className="scroller">
                     <div className="scroller__inner">
@@ -14,7 +14,11 @@ const PartnersMarquee = () => {
                             <img src={"/images/client-logos/partner3.png"} alt="" />
                             <img src={"/images/client-logos/partner4.png"} alt="" />
                             <img src={"/images/client-logos/partner5.png"} alt="" />
-                            <img src={"/images/client-logos/partner1.png"} alt="" />
+                            <img src={"/images/client-logos/partner6.png"} alt="" />
+                            <img src={"/images/client-logos/partner7.png"} alt="" />
+                            <img src={"/images/client-logos/partner8.png"} alt="" />
+                            <img src={"/images/client-logos/partner9.png"} alt="" />
+                            <img src={"/images/client-logos/partner10.png"} alt="" />
                         </Marquee>
                     </div>
                 </div>

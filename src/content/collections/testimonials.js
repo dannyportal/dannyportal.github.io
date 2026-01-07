@@ -8,51 +8,51 @@
 export const testimonials = [
     {
         id: 1,
-        name: "Zonathon Doe",
-        position: "CEO & Founder X",
-        company: "Tech Startup X",
-        src: "/images/testimonials/author1.jpg",
-        review: "Financial planners help people to knowledge in about how to invest and in save their moneye the most efficient way eve plan ners help people tioniio know ledige in about how.",
+        name: "Amy Elswick",
+        position: "Art Director / Senior Designer / Brand Strategist",
+        company: "Activated Insights",
+        src: "/images/testimonials/amy.jpg",
+        review: "Danny is the go-to person for anything web-related. He led major site projects, built custom plugins when needed, and communicated clearly at every step. He consistently meets deadlines without sacrificing quality.",
         rating: 5,
         featured: true,
-        industry: "Technology",
-        date: "2024-01-10"
+        industry: "Marketing",
+        date: "2025-03-10"
     },
     {
         id: 2,
-        name: "Liana Marie",
-        position: "Lead Designer Meta",
-        company: "Meta",
-        src: "/images/testimonials/author2.jpg",
-        review: "Financial planners help people to knowledge in about how to invest and in save their moneye the most efficient way eve plan ners help people tioniio know ledige in about how.",
+        name: "Tyler Guthrie",
+        position: "RevOps leader, CRM systems and process optimization",
+        company: "Activated Insights",
+        src: "/images/testimonials/tyler.jpg",
+        review: "Danny elevated our web presence through multiple brand updates and acquisitions. He has deep WordPress and hosting expertise, solves problems fast, and delivers measurable gains in performance and conversion.",
         rating: 5,
         featured: true,
-        industry: "Design",
-        date: "2024-02-15"
+        industry: "RevOps",
+        date: "2025-03-08"
     },
     {
         id: 3,
-        name: "Zonathon Doe",
-        position: "CEO & Founder X",
-        company: "Tech Startup X",
-        src: "/images/testimonials/author1.jpg",
-        review: "Financial planners help people to knowledge in about how to invest and in save their moneye the most efficient way eve plan ners help people tioniio know ledige in about how.",
+        name: "Kristen Duell",
+        position: "Healthcare and Tech Consultant",
+        company: "Activated Insights",
+        src: "/images/testimonials/kristen.jpg",
+        review: "Danny blends data-driven insight with creative problem-solving. He is detail-oriented, adaptable, and a true team player who consistently finds smart, strategic solutions.",
         rating: 4,
         featured: false,
-        industry: "Technology",
-        date: "2024-03-20"
+        industry: "Healthcare",
+        date: "2025-02-23"
     },
     {
         id: 4,
-        name: "Liana Marie",
-        position: "Lead Designer Meta",
-        company: "Meta",
-        src: "/images/testimonials/author2.jpg",
-        review: "Financial planners help people to knowledge in about how to invest and in save their moneye the most efficient way eve plan ners help people tioniio know ledige in about how.",
+        name: "Stephanie Baldwin",
+        position: "Content Strategist and Marketer",
+        company: "Freelance",
+        src: "/images/testimonials/stephanie.jpg",
+        review: "Danny fixed our site speed issues in less than a day and has been reliable ever since. He is thorough, fast, and very reasonably priced.",
         rating: 5,
         featured: false,
-        industry: "Design",
-        date: "2024-04-25"
+        industry: "Marketing",
+        date: "2021-02-09"
     },
 ];
 

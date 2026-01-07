@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <Hero />
-            <Portfolio/>
+            <Portfolio limit={9} />
         </>
     )
 }
