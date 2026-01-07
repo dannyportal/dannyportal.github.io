@@ -6,7 +6,7 @@ const Preloader = () => {
     const controls = useAnimation();
 
     useEffect(() => {
-        const gifDurationMs = 1200;
+        const gifDurationMs = 1500;
         const animate = async () => {
             await controls.start({
                 opacity: 1,
