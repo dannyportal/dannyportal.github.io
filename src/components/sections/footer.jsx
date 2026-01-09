@@ -19,7 +19,7 @@ const Footer = () => {
                         <div className="col-lg-6">
                             <div className="copyright-text extra-copyright">
                                 <p>
-                                    Crafted with React, Sanity and Codex
+                                    Crafted with React + Sanity
                                 </p>
                             </div>
                         </div>
