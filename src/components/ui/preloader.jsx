@@ -34,7 +34,7 @@ const Preloader = () => {
         <motion.div className="preloader" animate={controls}>
             <img
                 className="preloader__image"
-                src="/images/majinization.gif"
+                src="/images/giphy.gif"
                 alt="Loading animation"
             />
         </motion.div>
