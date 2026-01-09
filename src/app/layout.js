@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         {children}
         <CallToAction />
         <Footer />
-        <MegaBuddy />
+     {/* <MegaBuddy /> */}
       </body>
     </html>
   );

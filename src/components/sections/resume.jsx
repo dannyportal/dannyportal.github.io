@@ -14,8 +14,7 @@ const Resume = () => {
                                 <h2>Experience</h2>
                                 <div className="experience-list experience-grid">
                                     <Card year={'04/2025 - Present'} title={'UI/UX Web Developer'} institution={'Centripetal'} />
-                                    <Card year={'03/2025 - Present'} title={'Web & Digital Growth Manager (Contract)'} institution={'Activated Insights'} />
-                                    <Card year={'02/2021 - 03/2025'} title={'Web & Digital Growth Manager'} institution={'Activated Insights'} />
+                                    <Card year={'02/2021 - 04/2025'} title={'Web & Digital Growth Manager'} institution={'Activated Insights'} />
                                     <Card year={'02/2020 - 01/2021'} title={'Senior Web Developer & Digital Strategist'} institution={'The Related Group'} />
                                     <Card year={'11/2018 - 02/2020'} title={'Web Production Coordinator'} institution={'MEDNAX, Health Solutions Partner'} />
                                     <Card year={'05/2018 - 11/2018'} title={'Digital Media Designer'} institution={'Crius Energy, LLC'} />
