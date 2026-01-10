@@ -21,7 +21,7 @@ const Hero = () => {
                                     <img src={"/images/about/profile.png"} alt="About Me" />
                                 </div>
                                 <h2>Danny Portal</h2>
-                                <p>I am a Web Developer based in Miami, Florida with who specializes in Digital Production and Marketing.</p>
+                                <p>I am a Web Developer based in Miami, Florida who specializes in Digital Production and Marketing.</p>
                                 <div className="about-social text-center">
                                     <ul>
                                         <li><Link href="https://www.linkedin.com/in/dannyportal"><RiLinkedinFill size={20} /></Link></li>
