@@ -11,8 +11,27 @@ const baseSettings = {
   fill: true,
 };
 
-const startColor = { h: 120, s: 68, l: 40 };
-const endColor = { h: 210, s: 55, l: 16 };
+const paletteOptions = {
+  mutedBlue: {
+    startColor: { h: 210, s: 34, l: 28 },
+    endColor: { h: 198, s: 24, l: 18 },
+  },
+  neutralGray: {
+    startColor: { h: 210, s: 8, l: 92 },
+    endColor: { h: 210, s: 6, l: 70 },
+  },
+  coolMist: {
+    startColor: { h: 205, s: 20, l: 88 },
+    endColor: { h: 202, s: 18, l: 62 },
+  },
+  warmStone: {
+    startColor: { h: 30, s: 12, l: 90 },
+    endColor: { h: 28, s: 10, l: 64 },
+  },
+};
+
+const activePalette = "coolMist";
+const getActivePalette = () => paletteOptions[activePalette];
 
 function lerp(a, b, t) {
   return a + (b - a) * t;
@@ -22,7 +41,8 @@ function hslString(h, s, l) {
   return `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
 }
 
-function buildColors(count) {
+function buildColors(count, palette) {
+  const { startColor, endColor } = palette;
   const colors = [];
   for (let i = 0; i < count; i += 1) {
     const t = count === 1 ? 0 : i / (count - 1);
@@ -106,11 +126,11 @@ export default function BackgroundWaves() {
       return;
     }
 
-    function init(currentSettings) {
+    function init(currentSettings, palette) {
       const winW = window.innerWidth;
       const winH = window.innerHeight;
       const overflow = Math.abs(currentSettings.lines * currentSettings.offsetX);
-      const colors = buildColors(currentSettings.lines + 2);
+      const colors = buildColors(currentSettings.lines + 2, palette);
 
       svg.setAttribute("width", `${winW}`);
       svg.setAttribute("height", `${winH}`);
@@ -146,7 +166,7 @@ export default function BackgroundWaves() {
     let frameId = 0;
     let lastRender = 0;
 
-    const handleResize = () => init(baseSettings);
+    const handleResize = () => init(baseSettings, getActivePalette());
 
     function animate(time) {
       if (time - lastRender > 80) {
@@ -157,12 +177,12 @@ export default function BackgroundWaves() {
           amplitudeY: baseSettings.amplitudeY + Math.sin(t * 0.9) * 12,
           offsetX: baseSettings.offsetX + Math.sin(t * 0.6 + 1.2) * 6,
         };
-        init(currentSettings);
+        init(currentSettings, getActivePalette());
       }
       frameId = window.requestAnimationFrame(animate);
     }
 
-    init(baseSettings);
+    init(baseSettings, getActivePalette());
     frameId = window.requestAnimationFrame(animate);
     window.addEventListener("resize", handleResize);
     return () => {
