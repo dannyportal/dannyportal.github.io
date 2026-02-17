@@ -21,8 +21,8 @@ const paletteOptions = {
     endColor: { h: 210, s: 6, l: 70 },
   },
   coolMist: {
-    startColor: { h: 205, s: 20, l: 88 },
-    endColor: { h: 202, s: 18, l: 62 },
+    startColor: { h: 210, s: 26, l: 36 },
+    endColor: { h: 218, s: 30, l: 24 },
   },
   warmStone: {
     startColor: { h: 30, s: 12, l: 90 },
@@ -32,6 +32,7 @@ const paletteOptions = {
 
 const activePalette = "coolMist";
 const getActivePalette = () => paletteOptions[activePalette];
+const baseGradient = "linear-gradient(180deg, #2a4f8f 0%, #17315e 50%, #070d1b 100%)";
 
 function lerp(a, b, t) {
   return a + (b - a) * t;
@@ -141,11 +142,13 @@ export default function BackgroundWaves() {
         svg.removeChild(svg.firstChild);
       }
 
-      svg.style.backgroundColor = currentSettings.fill ? colors[0] : "#000";
+      svg.style.background = currentSettings.fill ? baseGradient : "#000";
 
       const paths = [];
       for (let i = 0; i < currentSettings.lines + 1; i += 1) {
-        const rootY = Math.floor((winH / currentSettings.lines) * i);
+        const rootY =
+          Math.floor((winH / currentSettings.lines) * i) -
+          currentSettings.amplitudeY * 2;
         const path = new Path(
           rootY,
           colors[i + 1],
