@@ -298,7 +298,7 @@ export default Portfolio
 
 
 const Card = ({ project, animationClass, onOpen }) => {
-    const imageUrl = project.image ? urlFor(project.image).width(800).height(520).url() : null;
+    const imageUrl = project.image ? urlFor(project.image).width(800).url() : null;
     return (
         <div className={`col-lg-4 col-md-6 item branding game ${animationClass}`}>
             <SlideUp delay={project._id || 0}>
@@ -315,7 +315,7 @@ const Card = ({ project, animationClass, onOpen }) => {
                                     width={383}
                                     height={249}
                                     sizes="100vw"
-                                    style={{ width: "100%", height: "auto" }}
+                                    style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                                     src={imageUrl}
                                     alt={project.title}
                                 />
