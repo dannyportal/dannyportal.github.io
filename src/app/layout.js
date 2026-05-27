@@ -6,6 +6,7 @@ import Header from "@/components/sections/header";
 import CallToAction from "@/components/sections/callToAction";
 import Footer from "@/components/sections/footer";
 import MegaBuddy from "@/components/ui/megaBuddy";
+import VersionSwitcher from "@/components/ui/VersionSwitcher";
 
 export const metadata = {
   title: "Danny Portal - Personal Portfolio",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <CallToAction />
         <Footer />
      {/* <MegaBuddy /> */}
+        <VersionSwitcher />
       </body>
     </html>
   );
