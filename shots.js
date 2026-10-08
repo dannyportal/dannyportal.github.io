@@ -99,8 +99,8 @@ export const SECTIONS = [
     focus: { x: 55, y: 45 },
     hold: { fwd: 'printHold', rev: 'printHoldRev' },
     hotspots: [
-      { id: 'monitor', label: 'Contact', title: 'Contact' },
-      { id: 'printer', label: '3D printer', title: 'Misc' },
+      { id: 'monitor', label: 'Contact', title: 'Contact', content: { type: 'module', module: './content/contact.js' } },
+      { id: 'printer', label: '3D printer', title: 'Misc', content: { type: 'html', html: '<div class="dp-soon"><h3>Coming soon</h3><p>Something is printing. Check back later.</p></div>' } },
     ],
   },
 ];

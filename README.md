@@ -109,6 +109,8 @@ The drums snare opens Art (`content/art.js`): the same cards and detail view, bu
 
 To allow live queries from a new origin: sanity.io/manage → project → API → CORS origins → add the origin (no credentials needed).
 
+The printer monitor opens Contact (`content/contact.js` + `content/contact.css`), ported from the Next.js portfolio's /contact page: "Get in Touch with Me!", the Location (Miami, Florida) and contact number cards, and the Formspree form (`https://formspree.io/f/xqeararq`, subject "Email from Folio Site", `_replyto` + honeypot). The form posts with fetch (`Accept: application/json`) and shows the reply inline. The 3D printer opens a "Coming soon" placeholder (inline html in `shots.js`). Modal boxes are fully transparent: no background, border or shadow; the content cards carry the visual weight.
+
 ### Letterbox
 
 `LETTERBOX` in `shots.js` (experiment, 2026-10-08): thin solid black bars top and bottom (`top`/`bottom` are minimum heights in px, 48/40). The header (logo at 30px, tabs, pause) sits in the top bar and the footer (caption, hint, numbered buttons) in the bottom one; the drum keycaps and the arrows stay on the footage. `fit: 'overlay'` (current) lays the footage out exactly as full-bleed, viewport cover with the focus crop, and draws the bars on top of it, so the frame keeps its full width and the bars hide its outer 48/40 px. `fit: 'contain'` fits the whole frame between the bars instead: spare height goes into the bars and a window wider than 16:9 gets black sides. Danny tried contain (black sides) and crop-from-the-top (ceiling lost) on 2026-10-08 and chose overlay. Set `enabled: false` to go back to full-bleed; the CSS is all under `body.letterbox` in `styles.css`.
