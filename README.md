@@ -81,6 +81,16 @@ Also on touch: swipe left/right changes section and the hint text changes to tap
 
 This is the "same footage, smarter crop" approach. Alternatives still open: redirect small screens to the base portfolio, a portrait cut of the footage, or a stills-based card version.
 
+## Publishing
+
+The site is live on GitHub Pages from the `dannyportal/dannyportal.github.io` repo (custom domain daniloportal.com; the Pages workflow uploads the checkout as-is, no build). To publish a change:
+
+    python -I publish.py
+    cd D:\website\dannyportal.github.io
+    git add -A && git commit -m "..." && git push
+
+`publish.py` copies only what the browser needs (page, modules, content/, tour.mp4, the snare clip, this README) and clears whatever was there before. Source footage, frames, Higgsfield material and the tooling stay in this folder.
+
 ## Hotspots
 
 Defined per section in `shots.js` as `{ id, label, title }`. Position comes from `tracks.js`: a list of keyframes `{ t, x, y, w, h }` per hotspot (`t` in source seconds, the rest as percent of the frame, `x`/`y` the centre). The position is interpolated between keyframes as the hold plays, so the hotspot follows the camera drift.
