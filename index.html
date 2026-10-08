@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>dannyportal.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="content/about.css" />
+  <link rel="stylesheet" href="content/works.css" />
+</head>
+<body>
+  <div id="stage" class="stage">
+    <video id="video" muted playsinline preload="auto"></video>
+    <div id="overlays" class="overlays"></div>
+    <canvas id="freeze" class="freeze"></canvas>
+    <div id="hotspots" class="hotspots"></div>
+    <div id="trackbox" class="trackbox" hidden></div>
+  </div>
+
+  <div id="loader" class="loader">
+    <div class="loader-bar"><div id="loader-fill" class="loader-fill"></div></div>
+    <div id="loader-text" class="loader-text">Loading footage…</div>
+  </div>
+
+  <header id="ui-header" class="ui ui-header">
+    <a class="brand" href="#desk" aria-label="Danny Portal"><img src="content/images/logo-white.png" alt="Danny Portal" width="1725" height="575" /></a>
+    <nav id="tabs" class="tabs" aria-label="Sections"></nav>
+    <button id="hs-btn" class="icon-btn hs-btn" aria-label="What's in this zone" aria-expanded="false" aria-controls="hs-menu" title="In this zone">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <div id="hs-menu" class="hs-menu" role="menu" hidden></div>
+    <button id="stop-btn" class="stop-btn" type="button" hidden>Stop drums</button>
+    <div id="tools" class="tools">
+    <button id="help-btn" class="icon-btn help-btn" type="button" aria-label="About this site" title="About this site">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.2 9.3a2.8 2.8 0 1 1 4 2.5c-.8.5-1.2 1.1-1.2 1.9v.6"/><path d="M12 17.6v.1"/></svg>
+    </button>
+    <button id="motion-btn" class="icon-btn motion-btn" aria-label="Pause motion" aria-pressed="false" title="Pause motion">
+      <svg class="ic-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+      <svg class="ic-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.87l11-6.5a1 1 0 0 0 0-1.74l-11-6.5A1 1 0 0 0 8 5.5z"/></svg>
+    </button>
+    </div>
+  </header>
+
+  <button id="prev" class="ui arrow arrow-left" aria-label="Previous section">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+  </button>
+  <button id="next" class="ui arrow arrow-right" aria-label="Next section">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
+
+  <div id="keys" class="ui keys" aria-label="Drum keys" hidden></div>
+
+  <footer id="ui-footer" class="ui ui-footer">
+    <div id="caption" class="caption"></div>
+    <div id="hint" class="hint">← → to move · click a hotspot · space pauses motion</div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-head">
+        <div>
+          <h2 class="modal-title" id="modal-title"></h2>
+        </div>
+        <button id="modal-close" class="icon-btn modal-close" aria-label="Close">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-tiles" id="modal-tiles" aria-hidden="true"></div>
+    </div>
+    <div class="scrollpill" id="scrollpill" aria-hidden="true"><div class="scrollpill-thumb"></div></div>
+  </div>
+
+  <div id="trackhud" class="trackhud" hidden>
+    <div class="trackhud-title">TRACK MODE</div>
+    <div>src <span id="th-src">0.000</span>s · tour <span id="th-tour">0.000</span>s · seg <span id="th-seg">–</span></div>
+    <div>hotspot <span id="th-hot">–</span></div>
+    <div class="trackhud-keys">, . step · [ ] ±0.5s · 1–9 pick hotspot · drag = keyframe · Backspace = delete at time · E export · T exit</div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

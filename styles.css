@@ -1,0 +1,486 @@
+:root {
+  --bg: #0a1020;
+  --ink: #e8ecf4;
+  --ink-dim: rgba(232, 236, 244, 0.6);
+  --accent: #c3ff3d;
+  --accent-soft: rgba(195, 255, 61, 0.35);
+  --glass: rgba(10, 16, 32, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --dissolve: 600ms;
+  --ui-fade: 350ms;
+  --font: 'Sintony', system-ui, -apple-system, 'Segoe UI', sans-serif;   /* Sintony ships 400 + 700 only: 500 renders as 400, 600 as 700 */
+  --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- stage: a 16:9 box scaled to cover the viewport ---- */
+.stage {
+  position: absolute;
+  left: 0; top: 0;   /* positioned by fitStage()/layoutStage() */
+  width: 100vw; height: 100vh; /* resized by fitStage() to a 16:9 box that covers the viewport */
+  overflow: hidden;
+}
+.stage video, .stage .freeze {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.stage video { transition: filter 400ms ease; }
+.stage.grayscale video, .stage.grayscale .freeze { filter: grayscale(1); }
+.freeze {
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+  z-index: 3;
+}
+.overlays { position: absolute; inset: 0; z-index: 1; }
+.overlay {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+}
+.overlay.idle { transition: opacity 400ms ease; z-index: 1; }
+.overlay.hit { z-index: 5; }          /* hit clips: above the frame, below the piece canvases and rings */
+.overlay.show { opacity: 1; }
+.freeze.show { opacity: 1; transition: none; }
+.freeze.fade { opacity: 0; transition: opacity var(--dissolve) ease; }
+
+/* ---- hotspots ---- */
+.hotspots { position: absolute; inset: 0; z-index: 4; transition: opacity var(--ui-fade) ease; }
+.hotspots.hidden { opacity: 0; pointer-events: none; }
+.hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--ink);
+  font: inherit;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotspot::before {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: border-color 200ms ease, background 200ms ease, box-shadow 200ms ease;
+}
+.hotspot:hover::before, .hotspot:focus-visible::before {
+  border-color: var(--accent);
+  background: rgba(195, 255, 61, 0.08);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+.hotspot[hidden] { display: none; }
+.hotspot:focus-visible { outline: none; }
+.hotspot .dot {
+  position: relative;
+  width: 26px; height: 26px;
+  flex: none;
+  display: grid; place-items: center;
+}
+/* four-point star */
+.hotspot .star {
+  width: 22px; height: 22px;
+  background: var(--accent);
+  clip-path: polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);
+  filter: drop-shadow(0 0 6px rgba(195, 255, 61, 0.8));
+  transition: transform 200ms ease;
+}
+.hotspot:hover .star, .hotspot:focus-visible .star { transform: scale(1.25) rotate(45deg); }
+/* pulse: thin rings that expand out of the star and fade */
+.hotspot .dot::before, .hotspot .dot::after {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid rgba(195, 255, 61, 0.9);
+  animation: ring-out 2.4s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
+}
+.hotspot .dot::after { animation-delay: 1.2s; }
+@keyframes ring-out {
+  0%   { transform: scale(0.6); opacity: 0.9; }
+  70%  { opacity: 0.25; }
+  100% { transform: scale(3.2); opacity: 0; }
+}
+body.playmode .hotspot .label { opacity: 1; }
+body.playmode .hotspot .star { background: var(--ink); filter: drop-shadow(0 0 4px rgba(232, 236, 244, 0.5)); }
+body.playmode .hotspot .dot::before, body.playmode .hotspot .dot::after { animation: none; opacity: 0; }
+.hotspot .label {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%; transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.hotspot:hover .label, .hotspot:focus-visible .label, .hotspots.labels .hotspot .label { opacity: 1; }
+
+/* ---- loader ---- */
+.loader {
+  position: fixed; inset: 0;
+  display: grid; place-content: center; gap: 14px;
+  background: var(--bg);
+  z-index: 50;
+  transition: opacity 500ms ease;
+}
+.loader.done { opacity: 0; pointer-events: none; }
+.loader-brand { font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--ink-dim); text-align: center; }
+.loader-bar { width: 220px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden; }
+.loader-fill { height: 100%; width: 0; background: var(--accent); transition: width 120ms linear; }
+.loader-text { font-size: 12px; color: var(--ink-dim); text-align: center; font-family: var(--mono); }
+
+/* ---- UI chrome ---- */
+.ui { position: fixed; z-index: 10; transition: opacity var(--ui-fade) ease; }
+body.moving .ui { opacity: 0; pointer-events: none; }
+
+.ui-header {
+  top: 0; left: 0; right: 0;
+  display: flex; align-items: center; gap: 24px;
+  padding: 18px 24px;
+  background: linear-gradient(to bottom, rgba(10,16,32,0.7), rgba(10,16,32,0));
+}
+.brand { display: block; height: 40px; flex: none; }
+.brand img { height: 100%; width: auto; display: block; filter: drop-shadow(0 1px 6px rgba(0, 0, 0, 0.5)); }
+.tabs { display: flex; align-items: center; gap: 3px; position: absolute; left: 50%; transform: translateX(-50%); }   /* dead centre of the bar, whatever sits either side */
+.tabs-label { font-size: 13px; font-weight: 700; color: var(--accent); margin-right: 6px; letter-spacing: 0.04em; }
+.tab {
+  width: 22px; height: 30px; display: grid; place-items: center; padding: 0;
+  background: transparent; border: 1px solid rgba(195, 255, 61, 0.35); color: var(--accent);
+  font: inherit; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums;
+  border-radius: 3px; cursor: pointer;
+  transition: color 200ms ease, background 200ms ease, border-color 200ms ease;
+}
+.tab:hover { border-color: var(--accent); background: rgba(195, 255, 61, 0.12); }
+.tab.active { color: #0a1020; background: var(--accent); border-color: var(--accent); }
+
+.icon-btn {
+  width: 30px; height: 30px; border-radius: 3px;   /* same treatment as the zone buttons */
+  display: grid; place-items: center; padding: 0;
+  background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(195, 255, 61, 0.35); color: var(--accent);
+  cursor: pointer; backdrop-filter: blur(8px);
+  transition: background 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+.icon-btn:hover { border-color: var(--accent); background: rgba(195, 255, 61, 0.15); }
+.icon-btn svg { width: 16px; height: 16px; }
+.tools { display: flex; align-items: center; gap: 6px; margin-left: auto; }   /* ? and pause, tight */
+
+/* compact menu: icon top-right, dropdown under the bar listing the zone's hotspots */
+.hs-btn { display: none; margin-left: auto; }
+body.compact .ui-header { gap: 6px; }                       /* ? sits right next to the menu icon */
+body.compact .ui-header .help-btn { margin-left: auto; }
+body.compact .ui-header .help-btn ~ .hs-btn, body.compact .ui-header .help-btn ~ .stop-btn { margin-left: 0; }
+body.compact .tools { display: none; }
+body.compact .hs-btn { display: grid; }
+body.compact .hs-btn[hidden] { display: none; }
+.hs-btn[aria-expanded="true"] { background: var(--accent); color: #0a1020; border-color: var(--accent); }
+.hs-menu {
+  position: fixed; top: var(--bar-top); right: 8px; z-index: 11;
+  min-width: 160px; padding: 6px;
+  background: rgba(0, 0, 0, 0.92); border: 1px solid rgba(195, 255, 61, 0.35); border-radius: 6px;
+  display: flex; flex-direction: column; gap: 2px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+.hs-menu[hidden] { display: none; }
+.hs-item {
+  display: flex; align-items: center; gap: 10px;
+  background: transparent; border: 1px solid transparent; border-radius: 4px;
+  color: var(--ink); font: inherit; font-size: 14px; padding: 8px 10px; cursor: pointer; text-align: left;
+}
+.hs-item__num {
+  width: 22px; height: 26px; display: grid; place-items: center; border-radius: 3px;
+  border: 1px solid rgba(195, 255, 61, 0.35); color: var(--accent); font-weight: 700; font-size: 13px;
+}
+.hs-item.active { color: var(--accent); }
+.hs-item.active .hs-item__num { background: var(--accent); color: #0a1020; border-color: var(--accent); }
+/* compact play mode: a plain Stop button in the top bar */
+.stop-btn {
+  margin-left: auto; padding: 0 12px; height: 30px;
+  background: var(--accent); color: #0a1020; border: 1px solid var(--accent); border-radius: 3px;
+  font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+}
+.stop-btn[hidden] { display: none; }
+/* touch: no double-tap zoom on the controls (drum keycaps especially) */
+html, body, button, .keycap, .hotspot { touch-action: manipulation; }
+
+.arrow {
+  top: 50%; transform: translateY(-50%);
+  width: 26px; height: 40px; border-radius: 3px;   /* same narrow rectangle as the zone buttons */
+  display: grid; place-items: center; padding: 0;   /* no default button padding: the icon is wider than the box it would leave */
+  background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(195, 255, 61, 0.35); color: var(--accent);
+  cursor: pointer; backdrop-filter: blur(8px);
+  transition: opacity var(--ui-fade) ease, border-color 200ms ease, transform 200ms ease;
+}
+.arrow:hover { border-color: var(--accent); background: rgba(195, 255, 61, 0.15); }
+.arrow svg { width: 16px; height: 16px; stroke-width: 2.5; }
+.arrow-left { left: 20px; }
+.arrow-right { right: 20px; }
+.arrow-left:hover { transform: translateY(-50%) translateX(-2px); }
+.arrow-right:hover { transform: translateY(-50%) translateX(2px); }
+.arrow[disabled] { opacity: 0.25; pointer-events: none; }
+
+.ui-footer {
+  left: 0; right: 0; bottom: 0;
+  display: flex; align-items: flex-end; justify-content: space-between;
+  padding: 24px;
+  background: linear-gradient(to top, rgba(10,16,32,0.7), rgba(10,16,32,0));
+}
+.caption { font-size: 15px; font-weight: 700; color: var(--accent); }
+.hint { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; }
+.hint-btn {
+  width: 22px; height: 30px; border-radius: 3px;   /* same narrow rectangle as the zone buttons */
+  display: grid; place-items: center; padding: 0;
+  background: transparent; border: 1px solid rgba(195, 255, 61, 0.35); color: var(--accent);
+  font: inherit; font-size: 12px; font-weight: 700; cursor: pointer;
+  transition: border-color 200ms ease, background 200ms ease, transform 150ms ease;
+}
+.hint-btn:hover { border-color: var(--accent); background: rgba(195, 255, 61, 0.12); transform: translateY(-1px); }
+.hint-btn.active { background: var(--accent); border-color: var(--accent); color: #0a1020; }
+
+/* ---- code-driven hit effects ---- */
+.piece {
+  position: absolute;
+  z-index: 20;                          /* above any hit clip */
+  pointer-events: none;
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  opacity: 0;              /* hidden at rest: the real frame is underneath, pixel-identical; the feathered edge is baked into the bitmap */
+}
+.impact {
+  position: absolute;
+  z-index: 21;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%) scale(0.35);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 14px rgba(195, 255, 61, 0.75), inset 0 0 10px rgba(195, 255, 61, 0.4);
+  pointer-events: none;
+  will-change: transform, opacity;
+  opacity: 0;
+}
+
+/* ---- on-screen keycaps (drum play mode) ---- */
+.keys {
+  right: 24px; bottom: 64px;
+  display: flex; flex-direction: column; gap: 8px;
+  align-items: flex-start;
+}
+.keys[hidden] { display: none; }
+.keyrow { display: flex; gap: 8px; margin-left: calc(var(--stagger, 0) * 22px); }
+.keycap {
+  width: 60px; height: 60px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-bottom-width: 3px;
+  background: rgba(10, 16, 32, 0.28);
+  backdrop-filter: blur(6px);
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 90ms ease, background 120ms ease, border-color 120ms ease;
+}
+.keycap-key { font-family: var(--mono); font-size: 18px; font-weight: 500; line-height: 1; }
+.keycap-name { font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-dim); line-height: 1; white-space: nowrap; }
+.keycap:hover { border-color: rgba(255, 255, 255, 0.6); }
+/* touch devices (body.mobile, device-keyed, not width-keyed): there is no keyboard,
+   so the keycaps become round pads labelled with the drum's name */
+body.mobile .keycap { width: 58px; height: 58px; border-radius: 50%; border-bottom-width: 1px; border-color: rgba(195, 255, 61, 0.45); background: rgba(0, 0, 0, 0.4); }
+body.mobile .keycap-key { display: none; }
+body.mobile .keycap-name { display: block; font-size: 10px; font-weight: 700; color: var(--accent); letter-spacing: 0.03em; white-space: normal; text-align: center; line-height: 1.1; padding: 0 4px; }
+body.mobile .keyrow { gap: 6px; margin-left: calc(var(--stagger, 0) * 28px); }
+/* compact (viewport <= 640px, toggled live by applyCompact in app.js): the modal
+   starts under the top bar and the hotspot markers are hidden (the numbered
+   buttons in the bottom bar open the content instead) */
+body.compact .modal-box {
+  left: 0; top: var(--bar-top); transform: none;
+  width: 100vw; height: calc(100vh - var(--bar-top)); height: calc(100dvh - var(--bar-top));
+  border: 0;
+}
+body.compact .modal-body { margin: 0; overflow-x: hidden; }   /* phones: vertical scroll only */
+/* small panel (welcome / help): a centred card instead of the full content box */
+.modal.modal-small .modal-box { width: min(460px, 92vw); height: auto; max-height: 80vh; }
+body.compact .modal.modal-small .modal-box { left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(460px, 92vw); height: auto; }
+.help { padding: 8px 24px 28px; text-align: center; }
+.help h3 { margin: 0 0 10px; font-size: 24px; font-weight: 700; color: var(--ink); line-height: 1.25; }
+.help p { margin: 0; font-size: 15px; color: var(--ink-dim); line-height: 1.6; }
+.help .help-sub { margin-top: 22px; font-size: 13px; }
+.help .help-cta {
+  display: inline-block; margin-top: 10px; padding: 9px 18px; border-radius: 3px;
+  background: var(--accent); color: #0a1020; border: 1px solid var(--accent);
+  font-weight: 700; font-size: 13px; text-decoration: none; letter-spacing: 0.02em;
+  transition: background 200ms ease, color 200ms ease;
+}
+.help .help-cta:hover { background: transparent; color: var(--accent); }
+.modal.modal-small .modal-head { padding: 10px 10px 0 24px; }   /* just the close button, tucked into the corner */
+body.compact .modal-head { padding-left: 16px; }
+body.compact .hotspots { display: none; }
+body.compact .hint { display: none; }                 /* the zone buttons take the hint's place */
+body.compact .tabs { position: static; transform: none; margin: 0 0 0 auto; }   /* in the bottom bar: right-aligned */
+body.compact .ui-header .tabs { display: none; }
+body.compact .ui-footer .motion-btn { margin-left: 10px; }
+/* touch devices only: bigger hit areas */
+body.mobile .hotspot { min-width: 44px; min-height: 44px; }
+@media (max-width: 640px) {
+  .keys { right: 12px; bottom: 56px; }
+  .keycap { width: 46px; height: 46px; }
+  .keycap-name { display: none; }
+}
+
+/* ---- content modal (digital grow-in) ---- */
+.modal { position: fixed; inset: 0; z-index: 20; }
+.modal[hidden] { display: none; }
+.modal-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(6, 10, 20, 0.55);
+  opacity: 0;
+}
+.modal-box {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: min(1440px, 94vw);
+  height: min(900px, 90vh);
+  transform: translate(-50%, -50%);
+  transform-origin: 0 0;
+  display: flex; flex-direction: column;
+  background: none;
+  border: none;
+  border-radius: 0;
+  /* shadow only above and below: the box is clipped on its left/right edges
+     so the blur cannot bleed out sideways */
+  box-shadow: 0 -36px 70px -20px rgba(0, 0, 0, 0.85), 0 36px 70px -20px rgba(0, 0, 0, 0.85);
+  clip-path: inset(-140px 0 -140px 0);   /* clip sideways so the shadow shows only above and below */
+  overflow: hidden;
+  will-change: transform, width, height;
+}
+.modal-head {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;
+  padding: 18px 10px 12px 0;   /* title sits on the cards' left edge */
+  flex: none;
+}
+.modal-title { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+.modal-close { flex: none; }
+.modal-body {
+  flex: 1; min-height: 0;
+  margin: 0;                 /* content cards run edge to edge, so the box shadow lines up with them */
+  border-radius: 0;
+  overflow: auto;
+  background: transparent;
+  color: var(--ink-dim);
+  line-height: 1.6; font-size: 15px;
+  color-scheme: dark;
+  scrollbar-width: none;            /* native bar hidden; the pill below indicates scrolling */
+}
+.modal-body::-webkit-scrollbar { display: none; }
+/* custom scroll pill: sits just outside the content's right edge (positioned
+   by updatePill), 4px at rest and grows rightward on hover */
+.scrollpill {
+  position: absolute;
+  width: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms ease, width 180ms ease;
+  z-index: 5;
+}
+.scrollpill.show { opacity: 1; }
+.scrollpill-thumb {
+  position: absolute; left: 0; right: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.32);
+  pointer-events: auto;
+  cursor: grab;
+  transition: background 180ms ease;
+}
+.modal-box:hover + .scrollpill, .scrollpill:hover { width: 10px; }
+.scrollpill-thumb:hover, .scrollpill.dragging .scrollpill-thumb { background: var(--accent); }
+.scrollpill.dragging .scrollpill-thumb { cursor: grabbing; }
+.modal-body > p { padding: 20px 24px; margin: 0; }
+.modal-body iframe { display: block; width: 100%; height: 100%; border: 0; background: #0b1224; }
+.modal-content { opacity: 0; width: 100%; height: 100%; }
+/* digital dissolve: a grid of opaque tiles over the box that drop away in sequence */
+.modal-tiles {
+  position: absolute; inset: 0;
+  display: grid;
+  pointer-events: none;
+}
+.modal-tiles span { background: #0a1020; opacity: 1; }
+
+/* ---- pause-motion toggle ---- */
+.motion-btn .ic-play { display: none; }
+.motion-btn.active .ic-pause { display: none; }
+.motion-btn.active .ic-play { display: block; }
+.motion-btn.active { background: var(--accent); border-color: var(--accent); color: #0a1020; }
+
+/* ---- track mode (dev) ---- */
+.trackhud {
+  position: fixed; left: 16px; bottom: 16px; z-index: 40;
+  padding: 12px 14px;
+  background: rgba(10, 16, 32, 0.9);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  font-family: var(--mono); font-size: 12px; line-height: 1.7;
+}
+.trackhud-title { color: var(--accent); font-weight: 600; letter-spacing: 0.1em; }
+.trackhud-keys { color: var(--ink-dim); max-width: 440px; }
+.trackbox {
+  position: absolute;
+  z-index: 5;
+  border: 1px dashed var(--accent);
+  background: rgba(195, 255, 61, 0.15);
+  pointer-events: none;
+}
+/* ---- letterbox (shots.js LETTERBOX): black bars hold the header and footer ---- */
+:root { --bar-top: 0px; --bar-bottom: 0px; --bar-color: rgba(0, 0, 0, 0.82); }   /* bars let a little footage through */
+body.letterbox { background: #000; }
+body.letterbox::before, body.letterbox::after {
+  content: ''; position: fixed; left: 0; right: 0; z-index: 9; background: var(--bar-color);
+}
+body.letterbox::before { top: 0; height: var(--bar-top); }
+body.letterbox::after { bottom: 0; height: var(--bar-bottom); }
+body.letterbox .ui-header {
+  height: var(--bar-top); padding: 0 20px; background: none;
+}
+body.letterbox .brand { height: 30px; }
+body.letterbox .ui-footer {
+  height: var(--bar-bottom); padding: 0 20px; align-items: center; background: none;
+}
+body.letterbox .caption { font-size: 14px; }
+body.letterbox .arrow { top: calc(var(--bar-top) + (100vh - var(--bar-top) - var(--bar-bottom)) / 2); }
+body.letterbox .keys { bottom: calc(var(--bar-bottom) + 16px); }
+
+body.tracking .stage { cursor: crosshair; }
+body.tracking .hotspot::before { border-color: rgba(255,255,255,0.35); }
+body.tracking .hotspot.picked::before { border-color: var(--accent); border-style: dashed; }
+
+@media (max-width: 640px) {
+  .arrow { width: 24px; height: 36px; }
+  .arrow-left { left: 12px; }
+  .arrow-right { right: 12px; }
+  .ui-footer, .ui-header { padding: 16px; }
+  .brand { height: 30px; }
+  .caption { font-size: 14px; }
+  .hotspot .label { font-size: 11px; }
+}
+

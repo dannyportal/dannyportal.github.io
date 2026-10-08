@@ -1,0 +1,1944 @@
+[
+ {
+  "_id": "aab747fc-7d19-4725-9da9-68122212f93c",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "enCappture",
+  "description": "Landing page created for enCappture Home Care product",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/e94dc4a09c52b90d6b0c92783879ada45be9d5cf-1871x10003.png",
+  "projectType": "Web",
+  "services": [
+   "Migrate design from Figma to Live code",
+   "Responsive design"
+  ],
+  "slug": "encappture-home-care-landing-page",
+  "title": "enCappture Home Care Landing Page",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2026"
+ },
+ {
+  "_id": "d80a5423-26bf-48c4-be76-36f79c6c1216",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "LaMaison Dev",
+  "description": "https://www.lamaisondev.co/\nShopify Web Development and Design for La Maison Dev ecommerce store",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/8599379193725e7f7fa3df1c1c46b6b58b87ec60-2552x8195.png",
+  "projectType": "Web",
+  "services": [
+   "Shopify",
+   "Web Development",
+   "Design",
+   "Project Management"
+  ],
+  "slug": "la-maison-dev-shopify-store",
+  "title": "La Maison Dev Shopify Store",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2026"
+ },
+ {
+  "_id": "354e3631-0972-467a-aed0-aa92a8386d55",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Miriam Allred",
+  "description": "Develop a custom Webflow based podcast site for home care owners and care leaders.\n\n",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/2a6e24a7de7576d0c1c502eae402c3e9bce547d7-1277x2487.png",
+  "projectType": "Web",
+  "services": [
+   "Webflow",
+   "Project Management",
+   "Developement"
+  ],
+  "slug": "home-care-strategy-lab-website",
+  "title": "Home Care Strategy Lab Website",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2025"
+ },
+ {
+  "_id": "71beadae-5731-4695-8f6b-1b8ca987398a",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "BigShotTravels",
+  "description": "Developed and designed custom WordPress travel blog for Big Shot Travels along with a custom map plugin that displays pins along all visited locations",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/688feb6b47341685d997cbdac605a3cbc6bf51aa-1141x1258.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Custom Plugin Development",
+   "Wordpress"
+  ],
+  "slug": "bigshottravels-travel-blog",
+  "title": "BigShotTravels Travel Blog",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2025"
+ },
+ {
+  "_id": "70de21d7-76e3-473e-8e51-df79de6f930b",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Rudy Lang",
+  "description": "Develop website for AGL golf league with plugin configuration for player rankings and stats",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/1d505e16e2d0719d0daf80302943bcbe870919d4-672x1341.png",
+  "projectType": "Web",
+  "services": [
+   "Wordpress",
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "agl-golf-league",
+  "title": "AGL Golf League",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2024"
+ },
+ {
+  "_id": "df18eb45-96a7-4bac-abdf-699b1a4e6b77",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "HomeCarePulse",
+  "description": "Main marketing site for Activated Insights\n\nhttps://web.archive.org/web/20250722212856/https://activatedinsights.com/",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/7fbc23d90d0ee39a9747a7a0a4e16aa064868630-1746x5198.png",
+  "projectType": "Web",
+  "services": [
+   "Web Management",
+   "Wordpress",
+   "Web Design"
+  ],
+  "slug": "activated-insights",
+  "title": "Activated Insights ",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2024"
+ },
+ {
+  "_id": "ead3b07c-8190-4e54-b756-4a2d7bdb386b",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": null,
+  "description": "Video for AI Champions Club",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/8317eebc284aff1d801e9502ba816c482f2c2910-1920x1080.jpg",
+  "projectType": "Video",
+  "services": [
+   "Editing",
+   "Motion Graphics",
+   "Sound Design"
+  ],
+  "slug": "activated-insights-champions-club",
+  "title": "Activated Insights Champions Club",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/1151851238?h=51e61d29e2\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": null,
+  "year": "2024"
+ },
+ {
+  "_id": "project-1395",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "305ycle.cc",
+  "description": "Wordpress website design and development for www.305ycle.cc group, ecommerce store. ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/b101a281af7381a4844e01788f3aeeee3e8c9a8e-1873x2140.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Development",
+   "Wordpress"
+  ],
+  "slug": "305ycle-cc",
+  "title": "305ycle.cc",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2023"
+ },
+ {
+  "_id": "project-1406",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Manifesto Multimedia",
+  "description": "Wordpress site development for Manifesto Multimedia",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/b922874b169caf51a037316e961c156f170dc17f-1873x3363.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Development",
+   "Wordpress"
+  ],
+  "slug": "manifesto-multimedia-2022",
+  "title": "Manifesto Multimedia",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2023"
+ },
+ {
+  "_id": "project-1416",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Owl Foot Ranch Studios",
+  "description": "Website Design and Development for owl foot ranch studios",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/8905b85bbfc7daf9d93f6aacf2af9e079b9ac6d6-1873x2243.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Development",
+   "Wordpress"
+  ],
+  "slug": "owl-foot-ranch-studios-2022",
+  "title": "Owl Foot Ranch Studios",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2023"
+ },
+ {
+  "_id": "project-1418",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Manifesto Multimedia ",
+  "description": "www.manifestomultimedia.com gallery design",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/a3c61828cd9b160493f89081ad5a973a0d87e1db-1873x3358.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Design"
+  ],
+  "slug": "manifesto-multimedia-2022-2",
+  "title": "Manifesto Multimedia ",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2023"
+ },
+ {
+  "_id": "0989d35a-3a28-4599-969e-29b805528da0",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "HomeCarePulse",
+  "description": "Main website for home care agency sass software company, Homecarepulse\n\nhttps://web.archive.org/web/20220710075554/https://www.homecarepulse.com/",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/066dd8c7a9954cff19d691de1bef063ff1c5d806-1742x7231.png",
+  "projectType": "Web",
+  "services": [
+   "Web Management",
+   "Design",
+   "Video Editing",
+   "Development"
+  ],
+  "slug": "homecarepulse-com-website",
+  "title": "HomeCarePulse.com Website",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2022"
+ },
+ {
+  "_id": "project-1494",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "Logo Animation and walkthrough tutorial video for platform",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/0ee6e9b670ca2362c44b86ef4ed09f7959415d8c-983x407.png",
+  "projectType": "Video",
+  "services": [
+   "Logo Animation",
+   "Editing",
+   "Voice Over"
+  ],
+  "slug": "activated-insights-logo-animation-voice-over-editing",
+  "title": "Activated Insights Logo animation",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/1059379703?h=fc46dba487\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": null,
+  "year": "2022"
+ },
+ {
+  "_id": "project-1508",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Tappas",
+  "description": "",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/2e0cadc33b093b20b6ae3e40bcd0e6ab022b774a-680x553.png",
+  "projectType": "Video",
+  "services": [],
+  "slug": "tappas-ad-creative-concept-editing",
+  "title": "Tappas Ad Creative, Concept &amp; Editing",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/1059381852?h=e849a33039\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": "https://vimeo.com/1059381852",
+  "year": "2022"
+ },
+ {
+  "_id": "0e9c5353-ba4b-4c20-9664-82822dcf709a",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Wordpress webaite for Icon Las Olas Condominium",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/107ebbd0a446d5e9d55d2c0a8df2b538e714ca4f-1000x3154.png",
+  "projectType": "Web",
+  "services": [
+   "Wordpress",
+   "Web Development"
+  ],
+  "slug": "icon-las-olas",
+  "title": "Icon Las Olas",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "10a78ee8-8202-44d6-a9db-cb859e1d71e6",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Icon Buckhead flyer for referrals",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/69c5816afa364fc592fc4599882b05200604d7fd-800x1122.jpg",
+  "projectType": "Flyers",
+  "services": [
+   "Design"
+  ],
+  "slug": null,
+  "title": "Icon Buckhead",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "1343f970-3c1a-419b-b1c9-1963d746e623",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Email design for Regatta at New River email blast.",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/40a7b951d2c3f30619a261af734b4fba6d829ab5-650x2243.png",
+  "projectType": "Email",
+  "services": [
+   "Design"
+  ],
+  "slug": "regatta-at-new-river",
+  "title": "Regatta at New River",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "17b9bf7d-c014-48d2-8a73-906b9cefb089",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related Group",
+  "description": "Wordpress Design and Development for Liberty Square Apartments",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/7d5beaebd09756fb47a1539605e8c497c6d165e7-1000x1859.png",
+  "projectType": "Web",
+  "services": [
+   "Wordpress",
+   "Web Design"
+  ],
+  "slug": "liberty-square",
+  "title": "Liberty Square",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "1c8138cd-f45f-4dc2-8724-38757f2c62e8",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related group",
+  "description": "Custom Wordpress theme and development for Related Groups Corporate page",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/99d60a3be0d62e1ab082dc75c53ce066005642a5-2553x9099.png",
+  "projectType": "Web",
+  "services": [
+   "Wordpress",
+   "Custom Theme",
+   "Design"
+  ],
+  "slug": "relatedgroup-com",
+  "title": "RelatedGroup.com",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "3b225f8b-3a4a-4830-a6ff-e296636e9682",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Email design for Manor Riverwalk mailer",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/d2280033a614fe0627299cb3cde139677b82d813-800x1613.png",
+  "projectType": "Email",
+  "services": [
+   "Design"
+  ],
+  "slug": "manor-riverwalk",
+  "title": "Manor Riverwalk",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "441ca063-ef3d-476c-a160-fe22f355953f",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Email design for New River Yacht Club",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/cd8e6f85024ced4423436ec522f5437bb7c9f9a8-650x3097.png",
+  "projectType": "Email",
+  "services": [
+   "Design"
+  ],
+  "slug": "new-river-landing",
+  "title": "New River Landing",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "8ef11be4-a0fb-40ef-a944-3082eea93d00",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Wordpress website for Hyde Bech House beach condominium",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/0ccc8bc5a8ccae75ea1734823b3bdd557b206d39-1000x2647.png",
+  "projectType": "Web",
+  "services": [
+   "Wordpress",
+   "Web Development"
+  ],
+  "slug": "hyde-beach-house",
+  "title": "Hyde Beach House",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "9d244951-7dae-46ef-a3ed-a8c1657cf36a",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Solemar",
+  "description": "Wordpress website for Solemar Condominium Community",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/3413227bef64a42bde289fdc62bc8f6089274184-1000x4346.png",
+  "projectType": "Web",
+  "services": [
+   "Wordpress",
+   "Web Development",
+   "Web Design"
+  ],
+  "slug": "solemar-pompano-website",
+  "title": "Solemar Pompano website",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "bda51e8e-b0e3-4224-be28-23c067d0b8b5",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Leasing Flyer for New River Yacht club",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/ad37001c3af98c3fcefeccc8414586db3b51eff2-800x1130.png",
+  "projectType": null,
+  "services": [
+   "Design"
+  ],
+  "slug": "new-river-yacht-club-leasing-flyer",
+  "title": "New River Yacht Club Leasing Flyer",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "f4f24d48-e48c-4ea1-a024-d94a5ce982c7",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "SLS",
+  "description": "Wordpress Design and Development for SLS Marina Beach Building",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/d3813581ec13c060e485fbb3a6710052c602c9bd-1000x3307.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Wordpress",
+   ""
+  ],
+  "slug": "sls-marina-beach",
+  "title": "SLS Marina Beach",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2021"
+ },
+ {
+  "_id": "02c2ed55-6e7f-4512-b41b-e2ce0a1cd14d",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Email design for Mason Riverwalk Email",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/d6db942d1b6e74cdd5073fdc5f6515166d7fd254-650x2066.png",
+  "projectType": "Email",
+  "services": [
+   "Design"
+  ],
+  "slug": "mason-riverwalk-email",
+  "title": "Mason Riverwalk Email",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2020"
+ },
+ {
+  "_id": "7fd18647-2c5e-41cd-8ad8-afd986666243",
+  "animationHeight": null,
+  "animationPath": "/animation/hero/index.html",
+  "animationWidth": null,
+  "client": "Public Power Energy",
+  "description": "Public Power Energy Supplier HTML 5 Ad banner design and development",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/1934b0dbd6a839f118e187b3ed528fa8a713e988-299x598.png",
+  "projectType": "Ad Banners",
+  "services": [
+   "HTML 5 Animation",
+   "Design"
+  ],
+  "slug": "public-power-ad",
+  "title": "Public Power Ad ",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2020"
+ },
+ {
+  "_id": "bbcd7075-4112-4f52-99b8-7df17458eb95",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Email design for Olympus Condominium email blast",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/9beba36a9b0bdebadfcf1f6cedff33210639740d-650x1784.png",
+  "projectType": "Email",
+  "services": [
+   "Design"
+  ],
+  "slug": "olympus-harbor-island-email",
+  "title": "Olympus Harbor Island Email",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2020"
+ },
+ {
+  "_id": "cba8f068-35f9-48fa-8bf5-8c995d96bd76",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Flyer design for icon las olas happy hour community sessions",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/28e229420c6046bd76e9982bd6628a202b99fdc9-800x1126.jpg",
+  "projectType": "Flyers",
+  "services": [
+   "Design"
+  ],
+  "slug": "icon-las-olas-live-happy-hour",
+  "title": "Icon Las Olas Live Happy Hour ",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2020"
+ },
+ {
+  "_id": "cf683170-1405-4093-a413-76dfea2a349b",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related group",
+  "description": null,
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/2193958ff7095522842df744d87c5e95635ea4d9-1920x1080.jpg",
+  "projectType": "Video",
+  "services": [
+   "Editing",
+   "Motion Graphics"
+  ],
+  "slug": "solemar-video-tour",
+  "title": "Solemar Video Tour",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/1151847775?h=ca52947f35\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": null,
+  "year": "2020"
+ },
+ {
+  "_id": "d0e1cc48-7c5c-4579-8faa-f21a326cf654",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Email design for Icon Buckhead email blast",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/d65f9bcb00f5381afb9229c4640310712027cad4-650x2278.png",
+  "projectType": "Email",
+  "services": [
+   "Design"
+  ],
+  "slug": "icon-buckhead-email",
+  "title": "Icon Buckhead Email",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2020"
+ },
+ {
+  "_id": "d46b165d-0282-4578-9ab3-d34fc4d0c159",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Related",
+  "description": "Flyer for Happy Hour community sessions at New River Yacht Club",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/7388a0b8fa40f85d3cf3eb481483057f5dd93e5f-1000x1407.png",
+  "projectType": "Flyers",
+  "services": null,
+  "slug": "new-river-yacht-club-happy-hour",
+  "title": "New River Yacht Club Happy Hour",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2020"
+ },
+ {
+  "_id": "31b7abb8-84af-4cb6-9c20-0049f62c44a8",
+  "animationHeight": null,
+  "animationPath": "/animation/snowman/index.html",
+  "animationWidth": null,
+  "client": "Crius Energy",
+  "description": "HTML 5 Banner Snowman campaign for CTG&E",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/3e567f0746782474ab5a470e76744cf06901aacc-293x599.png",
+  "projectType": "Ad Banners",
+  "services": [
+   "HTML 5 Animation",
+   "Design"
+  ],
+  "slug": "ctg-and-e-snowman-html-ad",
+  "title": "CTG&E Snowman HTML AD",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "3838b835-e720-42ba-83e6-d0dbc1826312",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "USG&E",
+  "description": "Visa active enrollment email for USG&E",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/1d328a2488d346a32ed17fa277d9a5aaa8c42de7-1468x1613.png",
+  "projectType": "Email",
+  "services": [
+   "Web Development",
+   "Email Design"
+  ],
+  "slug": "visa-card-actively-enrolled-email",
+  "title": "Visa Card Actively Enrolled Email",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "64ec6539-9cdc-470f-9e42-72146ddedfc0",
+  "animationHeight": null,
+  "animationPath": "/animation/lightbulbs/index.html",
+  "animationWidth": null,
+  "client": "Public Power Energy",
+  "description": "HTML 5 banner ad for Public Power Energy Supplier",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/68d95367876436c06f5db3b42c4e7c0447350598-299x249.png",
+  "projectType": "Ad Banners",
+  "services": [
+   "HTML 5 Animation",
+   "Design"
+  ],
+  "slug": "public-power-ad-light-bulb-campaign",
+  "title": "Public Power AD Light bulb Campaign",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "9820ff36-7f29-4880-b2d2-a0f173f8cc4a",
+  "animationHeight": 250,
+  "animationPath": "/animation/city/index.html",
+  "animationWidth": 800,
+  "client": "Crius Energy",
+  "description": "Html 5 Banner development and production for CTG&E Cityscape ad",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/59af2073f86cb661a35cd349b36ac41ed3165840-591x492.png",
+  "projectType": "Ad Banners",
+  "services": [
+   "HTML 5 Animation",
+   "Story Board",
+   "Design"
+  ],
+  "slug": "ctg-and-e-cityscape-ad",
+  "title": "CTG&E Cityscape Ad",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "adad3abe-7998-485e-81c7-3b9b354b9aa9",
+  "animationHeight": null,
+  "animationPath": "/animation/planet/index.html",
+  "animationWidth": null,
+  "client": "Crius Energy",
+  "description": "HTML 5 Web Development and Design for NYG&E Protect the Planet AD ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/a6fad21dee4726860764df1716c98ccbc53234a9-292x598.png",
+  "projectType": "Ad Banners",
+  "services": [
+   "HTML 5 Animation",
+   "Design"
+  ],
+  "slug": "nyg-and-e-protect-the-planet-ad",
+  "title": "NYG&E Protect the Planet AD ",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "b0ce8de9-12df-4eed-b7ae-e32d30d670e1",
+  "animationHeight": null,
+  "animationPath": "/animation/JDpower/index.html",
+  "animationWidth": null,
+  "client": "NJG&E ",
+  "description": "JD Power announcement Ad for NJG&E ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/31add7389cd114e7f2f0e69511f358577fe24d3a-301x243.png",
+  "projectType": "Ad Banners",
+  "services": [
+   "HTML 5 Animation",
+   "Design"
+  ],
+  "slug": "jd-power-ad",
+  "title": "JD Power Ad ",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "bdec9e15-df7a-4e84-8ad7-29fc26b7121e",
+  "animationHeight": null,
+  "animationPath": "/animation/green/index.html",
+  "animationWidth": null,
+  "client": "Crius Energy",
+  "description": "CTG&E Go Green html5 Banner animation and development",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/a3434eed19d1718fc017c5097d83d6ae078a9174-280x226.png",
+  "projectType": "Ad Banners",
+  "services": [
+   "HTML 5 Animation",
+   "Design"
+  ],
+  "slug": "ctg-and-e-go-green-ad",
+  "title": "CTG&E Go Green Ad",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "f6ebfba8-0668-4149-aacf-acf9f59915df",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Filter Easy",
+  "description": "Email for Filter Easy program enrollment  ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/f0551412ccb266866cec05cb4902aac6ed7d3a20-1468x2476.png",
+  "projectType": "Email",
+  "services": [
+   "Web Development",
+   "Email Design"
+  ],
+  "slug": "filter-easy-html-email",
+  "title": "Filter Easy HTML Email ",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "project-1229",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Acosta Yacht Group",
+  "description": "Website for Acosta Yacht Group charter services",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/73b2966cf6c42a460e403a205bc0b39ff40e3ed8-615x1599.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "acosta-yacht-group-2019",
+  "title": "Acosta Yacht Group",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2019"
+ },
+ {
+  "_id": "0fe7beb4-b019-495e-9d21-da3cc54d9a79",
+  "animationHeight": null,
+  "animationPath": "/animation/bunny/index.html",
+  "animationWidth": null,
+  "client": "Crius Energy",
+  "description": "HTML 5 Animated Banner for MAG&E Power",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/26a5a8daebe1d61bb23bfe4852fc82f37627fac9-279x278.png",
+  "projectType": "Ad Banners",
+  "services": [
+   "HTML 5 Animation",
+   "Design",
+   "Story Board"
+  ],
+  "slug": "mag-and-e-bunny-ad",
+  "title": "MAG&E Bunny Ad",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "4686017e-b4c8-4efc-8a29-0f8461748fd7",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Crius Energy",
+  "description": "Web development and design for Simply Green Power ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/7272128033fd9c47e537fd0e9fe4d4be84a344bd-1559x3154.png",
+  "projectType": "Web",
+  "services": [
+   "Web Development",
+   "Web Design"
+  ],
+  "slug": "simply-green",
+  "title": "Simply Green",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1018",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Showskii Records",
+  "description": "Wordpress build for local music management group",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/230cfd28a121a441d2aced3298ce39687d835e06-2554x4304.png",
+  "projectType": "Web",
+  "services": [
+   "Wordpress"
+  ],
+  "slug": "showskii-records-2018",
+  "title": "Showskii Records",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1021",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "CanPay Debit",
+  "description": "UI/UX and web app development for Canpay Debit App",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/1fdcde587462af36d742249726172ff699538a37-1020x671.png",
+  "projectType": "UI/UX",
+  "services": [
+   "Design",
+   "UI/UX",
+   "Web Development"
+  ],
+  "slug": "canpay-mobile-app-ui-2018",
+  "title": "CanPay Mobile App UI",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1024",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "7 Eleven Oklahoma",
+  "description": "App Design for 7 Eleven Oklahoma fuel payments",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/ebe0a16b12556a5bd18531a21d70685d5b606495-1310x1693.png",
+  "projectType": "UI/UX",
+  "services": [
+   "Design"
+  ],
+  "slug": "7-eleven-oklahoma-app-ui-2018",
+  "title": "7 Eleven Oklahoma App UI",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1054",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Citgo",
+  "description": "Web Development Assignment for Citgo Loyalty payment program",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/5a59fcead62b47f45177c03e876d0acdb647a0e8-760x1919.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "citgo-check-card-landing-2018",
+  "title": "Citgo Check Card Landing",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1057",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Maple Leaf Markets",
+  "description": "Full rebrand and website development for maple leaf markets brand",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/627b076d2b3438f7e277fdca57ed99c101fbe90d-2370x1526.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development",
+   "Hosting"
+  ],
+  "slug": "maple-leaf-markets-2018",
+  "title": "Maple Leaf Markets",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1060",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "RottenRobbie",
+  "description": "Corporate website design and development for RottenRobbie Fuel Stores",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/5597c49e8ae5602a755b451e0f49ba5255a44c7e-1728x1628.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "rottenrobbie-fuel-stores-website-2018",
+  "title": "RottenRobbie Fuel Stores",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1069",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Fast Business Financial",
+  "description": "Website development for Fast Business Financial loan services",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/f6481acb7332e5d3428b417d581320a36c68c4b2-718x626.png",
+  "projectType": "Web",
+  "services": [
+   "Web Development"
+  ],
+  "slug": "fast-business-financial-2018",
+  "title": "Fast Business Financial",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1203",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Fast Business Financial",
+  "description": "Website Development for bellevue chiropractic",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/b63eaa52d3707122a13187fe4db4b9b1868c1839-2798x2590.png",
+  "projectType": "Web",
+  "services": [
+   "Web Development"
+  ],
+  "slug": "bellevue-chiropractic-2018",
+  "title": "bellevuechiro.com",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1252",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "Website Design and Development for Harlem Real Estate Holdings",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/63554e69d20ef13ec090a6d150f3c07cbca77b90-2760x7608.png",
+  "projectType": "Web",
+  "services": [],
+  "slug": "harlem-real-estate-holdings",
+  "title": "Harlem Real Estate Holdings",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1378",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "Mobile POS system for Canpay Debit UI/UX",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/0efedf559f35bbce0ba757e4ce0ea2bb11a17f1c-1020x771.png",
+  "projectType": "UI/UX",
+  "services": [],
+  "slug": "canpay-mobile-pos-ui-2018",
+  "title": "CanPay Mobile POS UI",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1484",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Mpay",
+  "description": null,
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/eb4fd4d76bd1bbb4e1076be876d5482e25cd40c1-1690x879.png",
+  "projectType": "Video",
+  "services": [
+   "Editing",
+   "Voice over",
+   "App UI/UX"
+  ],
+  "slug": "mpay-app-demo-ui-ux-voiceover-and-editing",
+  "title": "MPay App Demo",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/1059379008?h=9d7a2a68f6\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1487",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Total Gas",
+  "description": "",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/5667d8a4db182f4802bf6540da2a9b22e2fd9c43-1618x889.png",
+  "projectType": "Video",
+  "services": [
+   " Logo Animation",
+   "Voice Over",
+   "App UI/UX",
+   "Video Editing"
+  ],
+  "slug": "total-pay-app-demo-ui-ux-voiceover-and-editing",
+  "title": "Total Pay App Demo",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/1059379008?h=9d7a2a68f6\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\" fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": null,
+  "year": "2018"
+ },
+ {
+  "_id": "project-1015",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "7Eleven Oklahoma",
+  "description": "Website for 7 Eleven Oklahoma Fuel Savings Program",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/4528731a77abbc50088c056a8728f78d62087adb-2784x4426.png",
+  "projectType": "Web",
+  "services": [
+   "Web Development"
+  ],
+  "slug": "7-eleven-oklahoma-2017",
+  "title": "7 Eleven Oklahoma",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2017"
+ },
+ {
+  "_id": "project-1028",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Zipline",
+  "description": "Logo for ACH Achieve program from Zipline",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/d8b1b6e012bca0aaddc90c74fba96d2dc87bd7c0-1960x1004.png",
+  "projectType": "Art",
+  "services": [
+   "Design"
+  ],
+  "slug": "ach-payments-achieve-logo-2017",
+  "title": "ACHIEVE logo",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2017"
+ },
+ {
+  "_id": "project-1066",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Total Gas",
+  "description": "UI/UX for Total Gas fuel application",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/be6f9d26e239aacac35cb804db12c0f1549c3b1f-2074x1162.png",
+  "projectType": "UI/UX",
+  "services": [],
+  "slug": "total-pay-app-ui-2017",
+  "title": "Total Pay App UI",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2017"
+ },
+ {
+  "_id": "project-1219",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Deaf Poets",
+  "description": "Music video for deaf poets. Animation, Editing and motion graphics",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/5fc840fbc94843bd6d0325273951f12bd00ab563-452x454.png",
+  "projectType": "Video",
+  "services": [
+   "After Effects",
+   "Animation",
+   "Editing"
+  ],
+  "slug": "deaf-poets-video-after-effects-animations",
+  "title": "Deaf Poets Video",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/237339898?h=bb73b71ce2\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": null,
+  "year": "2017"
+ },
+ {
+  "_id": "project-1491",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Zipline",
+  "description": "",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/a42311b259c4a62c79f8cb8adb066fcde2995a36-1422x816.png",
+  "projectType": "Video",
+  "services": [
+   "Motion Graphics",
+   "After Effects",
+   "Video Editing"
+  ],
+  "slug": "zipline-promo-video",
+  "title": "Zipline Promo Video",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/645257853?h=081cc57fb8\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": null,
+  "year": "2017"
+ },
+ {
+  "_id": "project-988",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Flash Foods",
+  "description": "Website design and development for Flash Foods mobile payments program",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/0a858258ba3b4f91f08f1dbb520d55f165a661c6-2784x3872.png",
+  "projectType": "Web",
+  "services": [
+   "Web Development",
+   "Web Design"
+  ],
+  "slug": "flash-foods-landing-page-2017",
+  "title": "Flash Foods Landing Page",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2017"
+ },
+ {
+  "_id": "project-1011",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "GE Motors",
+  "description": "Landing page for General Electric Fueling Program",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/7433334f73facd3adf84bc350bc135d32f10851b-1392x3364.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "ge-connected-fueling-2016",
+  "title": "GE Connected Fueling",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2016"
+ },
+ {
+  "_id": "project-1063",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Zipline",
+  "description": "Landing Page Design for ZIpline Mpay application",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/8f349f38a13dcdc31f779b77c3ff5545d077f87d-1188x1538.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Design"
+  ],
+  "slug": "zipline-loyalty-brochure-2016",
+  "title": "ZipLine Loyalty LP",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2016"
+ },
+ {
+  "_id": "project-981",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Edge Construction",
+  "description": "Web development and design for Edge Construction company",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/5188af8d3abfdbcb730adecb7c055a4c1e35a646-2784x1868.png",
+  "projectType": "Web",
+  "services": [
+   "Web Development",
+   "Web Design"
+  ],
+  "slug": "edge-construction-2016",
+  "title": "Edge Construction",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2016"
+ },
+ {
+  "_id": "project-1008",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "FreeTel",
+  "description": "Website project for FreeTel Hispanic Telecom Company",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/72ddd1425b7bc92518bc6b86ed071eff75d6c8cc-816x1826.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "freetel-website-2014",
+  "title": "FreeTel Website",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2015"
+ },
+ {
+  "_id": "project-1497",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Circle K",
+  "description": "",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/e0603d5dfcf932bce152e77d1446ec0de50aa1f8-1583x871.png",
+  "projectType": "Video",
+  "services": [
+   "Animation",
+   "Voice over",
+   "Editing"
+  ],
+  "slug": "speedway-customer-rewards-training-video-animation-voiceover",
+  "title": "Circle K customer rewards training video",
+  "videoEmbed": "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/144804339?h=acf1f9cd41\" width=\"640\" height=\"360\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" allow=\" fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\"   allowfullscreen></iframe>",
+  "vimeoUrl": null,
+  "year": "2015"
+ },
+ {
+  "_id": "project-887",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "TecIntegra",
+  "description": "Web design for TecIntegra systems",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/b2d01f6e206c34f748b4d420ea8960085788daf1-1024x1317.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Development"
+  ],
+  "slug": "elementor-887",
+  "title": "TecIntegra",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2015"
+ },
+ {
+  "_id": "project-891",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Dendoe Clothing",
+  "description": "Web development and design for Dendoe Clothing brand",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/0d000aafdc2e6cd10a8652e9687c9c4c45a592f3-1024x1425.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Design",
+   "ecommerce"
+  ],
+  "slug": "dendoe-clothing-2015",
+  "title": "Dendoe Clothing",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2015"
+ },
+ {
+  "_id": "project-894",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Zipline",
+  "description": "Corporate site development for Zipline Payments on Wordpress",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/4375310557dde2520ba8edb15f6680cf44ca31ea-510x1019.png",
+  "projectType": "Web",
+  "services": [
+   "Web Development",
+   "Web Design"
+  ],
+  "slug": "zipline-2015",
+  "title": "Zipline",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2015"
+ },
+ {
+  "_id": "project-984",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Zipline",
+  "description": "Backend reporting and management UI/UX and design for Business Member Portal",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/5cb46accf0cbcc90cc16c59ab8aadf6de73cf8c6-2554x1784.png",
+  "projectType": "Web",
+  "services": [
+   "Web Development",
+   "Web Design"
+  ],
+  "slug": "npc-business-member-portal-2015",
+  "title": "NPC Business member portal",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2015"
+ },
+ {
+  "_id": "project-1040",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Zipline",
+  "description": "Logo for USAnswer call center",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/7a1b803e25e3620fa5cfa63e5c151e19854b9fd5-1298x786.png",
+  "projectType": "Art",
+  "services": [],
+  "slug": "usanswer-logo-2015",
+  "title": "USAnswer logo",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2014"
+ },
+ {
+  "_id": "project-1501",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Zipline",
+  "description": "",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/b4f5606ff741b0ba4a36bc9289bce6be826a2200-1601x870.png",
+  "projectType": "Video",
+  "services": [
+   "Animation",
+   "Editing"
+  ],
+  "slug": "zipline-privacy-video-animation",
+  "title": "Zipline Privacy Video, Animation",
+  "videoEmbed": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/67673466?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"Privacy Video\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>",
+  "vimeoUrl": null,
+  "year": "2014"
+ },
+ {
+  "_id": "project-903",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Noco Fuels",
+  "description": "Noco Fuels app UI/UX ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/59ea4eb20b1b097f18ab5f47782aa1d4f0a8f221-461x684.jpg",
+  "projectType": "UI/UX",
+  "services": [
+   "Design"
+  ],
+  "slug": "noco-app-ui-2014",
+  "title": "Noco App UI",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2014"
+ },
+ {
+  "_id": "project-909",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "RX Verify",
+  "description": "Web development and design for RXVerify company",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/928a8189743b0bb992ff5e0fc52f4d5e98beeaac-983x1024.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "rx-verify-2014",
+  "title": "RX Verify",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2014"
+ },
+ {
+  "_id": "project-1031",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Burger King",
+  "description": "Provided Design and Art Direction for interactive sling shot Burger king game",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/f1b789a1554cf4b848d733bd0f8e19b05f785019-1228x761.jpg",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Art Direction"
+  ],
+  "slug": "burger-king-kids-club-game-2014",
+  "title": "Burger King Kids Club Game",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-1035",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Sapient Nitro",
+  "description": "Jr Art direction in multiple ad campaigns using Flash for major brands",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/6ff40b874bc10fb56bf0b5b9d0834d801084fa11-1035x876.png",
+  "projectType": "Ad Banners",
+  "services": [],
+  "slug": "various-flash-ads-sapient-2013",
+  "title": "Various Flash Ads",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-900",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Service Keepers",
+  "description": "Website Design and Development for Service Keepers Cleaning",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/ba5b21010edf956372f2a6b13466a9a849f2796f-1064x1998.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "service-keepers-2013",
+  "title": "Service Keepers",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-906",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "SkinTech",
+  "description": "Site Design and Development for SkinTech Skin Care ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/4c5d222dbb54e0bd38fb6979f96d881be6086e68-1920x2128.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "skintech-2013",
+  "title": "SkinTech",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-916",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Xfire Gaming",
+  "description": "Website design for Xfire Gaming",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/c8d2233adfe6a86faee2b09226ae204cc64a3e5b-2784x3210.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "xfire-gaming-2013",
+  "title": "Xfire Gaming",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-919",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Flash Foods",
+  "description": "UI/UX for fueling payments app for Flash Foods",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/4b881dd74c0fd5a0509f9bae5040098259c0b3e7-461x704.jpg",
+  "projectType": "UI/UX",
+  "services": [
+   "Design"
+  ],
+  "slug": "flashfoods-app-2013",
+  "title": "FlashFoods App",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-925",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Chefs Appliances",
+  "description": "Website design and development for Chefs Appliances store",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/9746560a621ce56c5da1a25111d8862859c8c181-1024x898.png",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Development",
+   "Wordpress"
+  ],
+  "slug": "chefs-appliances-2013",
+  "title": "Chefs Appliances",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-931",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Zipline",
+  "description": "UI/UX design for mpay mobile payments application",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/a34e7d73dac5a39f840aa467b7545e35f7fea7d0-481x722.jpg",
+  "projectType": "UI/UX",
+  "services": [
+   "Design",
+   "UI/UX"
+  ],
+  "slug": "mpay-app-2013",
+  "title": "Mpay App",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-944",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Gaming Modz",
+  "description": "Website development and design for Gaming Modz ecommerce store",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/5e2fae2f5d32d3a19a34a0b9e066dac9de77a5e8-1680x1924.png",
+  "projectType": "Web",
+  "services": [
+   "Wordpress",
+   "Web Development",
+   "Design"
+  ],
+  "slug": "gaming-modz-2013",
+  "title": "Gaming Modz",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-954",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Legal Solutions la",
+  "description": "Web development and design for legal solutions partner ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/745304eb8346ede185ffecaa5aa099823bc308fe-1039x759.jpg",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Development"
+  ],
+  "slug": "legal-solutions-la-website-2013",
+  "title": "Legal Solutions",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-963",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "SkinTech",
+  "description": "Package design for SkinTech skin care product",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/00717df538bbde43ffa8b2e66caf293cf102433e-595x812.png",
+  "projectType": "Art",
+  "services": [
+   "Design"
+  ],
+  "slug": "skintech-packaging-2013",
+  "title": "SkinTech packaging",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-966",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "UI/UX for pride stores payments app",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/c4f48939e2096daea003bb579842076547dd9fae-577x865.png",
+  "projectType": "UI/UX",
+  "services": [],
+  "slug": "pride-stores-2013",
+  "title": "Pride Stores",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2013"
+ },
+ {
+  "_id": "project-1027",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "UI/UX design for BarbersBook App",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/2bb4613873260b1016d4d15e8776a6ae18a64273-420x565.png",
+  "projectType": "UI/UX",
+  "services": [],
+  "slug": "barbers-book-ui-ux-2012",
+  "title": "Barbers Book",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2012"
+ },
+ {
+  "_id": "project-913",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Bar Eye",
+  "description": "UI/UX Design for BarEye Social App",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/7588a20676510bd661e2515ebe8816ec7359af7a-383x576.jpg",
+  "projectType": "UI/UX",
+  "services": [
+   "Design"
+  ],
+  "slug": "bar-eye-2012",
+  "title": "Bar Eye",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2012"
+ },
+ {
+  "_id": "project-922",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "Beer and Burger Joint app site design",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/ccd350764b73ca999d2c4c6f9475ab995d7e8af7-326x575.png",
+  "projectType": "UI/UX",
+  "services": [],
+  "slug": "burgers-and-beer-joint-ui-mock-up",
+  "title": "Burgers and Beer Joint UI Mock Up",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2012"
+ },
+ {
+  "_id": "project-969",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Pumpstart",
+  "description": "Pumpstart payments program website",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/c95a9ce04731401a00a4bd2cb2925f221f835b5b-1072x1649.png",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "pumpstart-2012",
+  "title": "PumpStart",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2012"
+ },
+ {
+  "_id": "project-1043",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "Self Portrait from FullSail",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/18b9c1a57e86ac6c40d4296853e9a147525c35e7-597x708.jpg",
+  "projectType": "Art",
+  "services": [
+   ""
+  ],
+  "slug": "vector-art-2011",
+  "title": "Vector Art",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2011"
+ },
+ {
+  "_id": "project-938",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "House of Boho",
+  "description": "Website Design and Development for House of Boho brand",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/a3a2d7b73a35551c9377dc9e4b66f8d4223e9957-768x713.jpg",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Wordpress"
+  ],
+  "slug": "house-of-boho-2011",
+  "title": "House of Boho",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2011"
+ },
+ {
+  "_id": "project-947",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "BeScene Magazine",
+  "description": "Web development and Design for BeScene Magazine",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/c745dccbb9a37ae0cf38f8ab8867e251518ffd4f-1000x767.jpg",
+  "projectType": "Web",
+  "services": [
+   "Design",
+   "Web Development"
+  ],
+  "slug": "bescene-magazine-2011",
+  "title": "BeScene Magazine",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2011"
+ },
+ {
+  "_id": "project-934",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Unlimited Line Corp",
+  "description": "print brochure cover",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/43eb8e52e28ec91562a7ea84d5ef7aa6dc986858-994x768.jpg",
+  "projectType": "Art",
+  "services": [
+   "Design"
+  ],
+  "slug": "unlimited-line-corp-2010",
+  "title": "Unlimited Line Corp",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2010"
+ },
+ {
+  "_id": "project-941",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "G1HQ",
+  "description": "Website design and development for G1HQ community blog",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/d9b4289c1f9925d1ae0f10de6c1e9fb07c884a73-1274x860.jpg",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "g1hq-2010",
+  "title": "G1HQ",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2010"
+ },
+ {
+  "_id": "project-960",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Optic Blast Studios",
+  "description": "",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/14167c117c6a578b9ef9a65a0c6b213f2c8ca032-1500x602.jpg",
+  "projectType": "Art",
+  "services": [
+   "Design"
+  ],
+  "slug": "optic-blast-studios-flyer-2010",
+  "title": "Optic Blast Studios Flyer",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2010"
+ },
+ {
+  "_id": "project-1072",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/fd37ad4c209b10d620f4a864902a9a3b3b321656-1600x1000.jpg",
+  "projectType": "Art",
+  "services": [],
+  "slug": "illustration-photoshop-2009",
+  "title": "Illustration/Photoshop",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2009"
+ },
+ {
+  "_id": "project-897",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/8d77e127c420e65d67d47ef279b188056b39ff2b-350x500.jpg",
+  "projectType": "Art",
+  "services": [],
+  "slug": "vector-illustration-2009",
+  "title": "Vector Illustration",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2009"
+ },
+ {
+  "_id": "project-928",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Amato int",
+  "description": "logo design",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/a15b936d9a46529a79eb223f9262f7a34c35c0f5-312x97.jpg",
+  "projectType": "Art",
+  "services": [
+   "Design"
+  ],
+  "slug": "amato-int-2009",
+  "title": "Amato int",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2009"
+ },
+ {
+  "_id": "project-957",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Auto Alea Global",
+  "description": "Web development and design for Auto Alea Global corporate website",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/cd8dc40b2776b277dcff37e54cfec468696b3ef0-750x750.jpg",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "auto-alea-global-2009",
+  "title": "Auto Alea Global",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2009"
+ },
+ {
+  "_id": "project-1046",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "",
+  "description": "Jimi Hendrix Vector Art",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/337beb7ee5a027a622fe1471d256a54210599036-815x1181.jpg",
+  "projectType": "Art",
+  "services": [],
+  "slug": "jimmy-hendrix-vector-2008",
+  "title": "Jimmy Hendrix Vector,",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2008"
+ },
+ {
+  "_id": "project-972",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Total Panel Miami",
+  "description": "Web development and design for Total Panel Miami",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/e09b53409a7fa26c182a4170329e4b70472b5019-540x652.jpg",
+  "projectType": "Web",
+  "services": [
+   "Web Design",
+   "Web Development"
+  ],
+  "slug": "total-panel-2007",
+  "title": "Total Panel",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2007"
+ },
+ {
+  "_id": "project-975",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Victoria Sofia Website",
+  "description": "Web development and design for Victoria Sofia Website",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/4154d0a79829a35a899f1c973ac19a786841658a-1069x702.jpg",
+  "projectType": "Web",
+  "services": [
+   "Web Development",
+   "Web Design"
+  ],
+  "slug": "victoria-sofia-website-2002",
+  "title": "Victoria Sofia Website",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2002"
+ },
+ {
+  "_id": "project-978",
+  "animationHeight": null,
+  "animationPath": null,
+  "animationWidth": null,
+  "client": "Excel Conferences",
+  "description": "Web Development for Excel Conferences ",
+  "image": "https://cdn.sanity.io/images/kz27vn4i/production/0f46b406f286803f772127be71d44b167a4c6a35-555x535.jpg",
+  "projectType": "Web",
+  "services": [
+   "Web Development"
+  ],
+  "slug": "excel-conferences-2002",
+  "title": "Excel Conferences",
+  "videoEmbed": null,
+  "vimeoUrl": null,
+  "year": "2002"
+ }
+]
