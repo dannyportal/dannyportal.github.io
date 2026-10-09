@@ -24,6 +24,7 @@ const QUERY = `*[_type == "project"] | order(year desc) {
   _id, title, "slug": slug.current, year, client, services,
   "projectType": projectType->title,
   description, vimeoUrl, videoEmbed, animationPath, animationWidth, animationHeight,
+  "video": videoFile.asset->url, "videoType": videoFile.asset->mimeType,
   "image": image.asset->url
 }`;
 
@@ -77,6 +78,10 @@ function media(p) {
     const w = p.animationWidth ? `${p.animationWidth}px` : '100%';
     const h = p.animationHeight ? `${p.animationHeight}px` : '46vh';
     return `<div class="dp-modal__animation" style="width:${w};height:${h}"><iframe src="${esc(ANIMATION_HOST + p.animationPath)}" title="${esc(p.title)} animation" scrolling="no" allow="autoplay; fullscreen"></iframe></div>`;
+  }
+  if (p.video) {   // a clip uploaded to Sanity: plays inline, muted and looping, with the project image as its poster
+    const poster = p.image ? ` poster="${img(p.image, 1200)}"` : '';
+    return `<video class="dp-modal__clip" src="${esc(p.video)}"${p.videoType ? ` type="${esc(p.videoType)}"` : ''}${poster} controls autoplay muted loop playsinline preload="metadata"></video>`;
   }
   const video = embedSrc(p.videoEmbed) || p.vimeoUrl;
   if (video) return `<div class="dp-modal__video"><iframe src="${esc(video)}" title="${esc(p.title)} video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
