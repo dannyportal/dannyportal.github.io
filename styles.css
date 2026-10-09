@@ -108,13 +108,34 @@ body {
   position: absolute; inset: 0;
   border-radius: 50%;
   border: 1.5px solid rgba(195, 255, 61, 0.9);
-  animation: ring-out 2.4s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
+  animation: ring-out-a 7.2s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
 }
-.hotspot .dot::after { animation-delay: 1.2s; }
-@keyframes ring-out {
-  0%   { transform: scale(0.6); opacity: 0.9; }
-  70%  { opacity: 0.25; }
-  100% { transform: scale(3.2); opacity: 0; }
+.hotspot .dot::after { animation-name: ring-out-b; animation-delay: 1.2s; }
+/* Two rings alternate every 1.2s. Each cycles through three colours over 7.2s
+   (three 2.4s expansions), ordered so the rings you see go lime, white, red,
+   lime, white, red: ::before emits lime / red / white, ::after (1.2s later)
+   emits white / lime / red. */
+@keyframes ring-out-a {
+  0%      { transform: scale(0.6); opacity: 0.9;  border-color: rgba(195, 255, 61, 0.9); }   /* lime */
+  23.33%  { opacity: 0.25; }
+  33.33%  { transform: scale(3.2); opacity: 0;    border-color: rgba(195, 255, 61, 0.9); }
+  33.34%  { transform: scale(0.6); opacity: 0.9;  border-color: rgba(255, 70, 70, 0.9); }    /* red */
+  56.66%  { opacity: 0.25; }
+  66.66%  { transform: scale(3.2); opacity: 0;    border-color: rgba(255, 70, 70, 0.9); }
+  66.67%  { transform: scale(0.6); opacity: 0.9;  border-color: rgba(255, 255, 255, 0.9); }  /* white */
+  90%     { opacity: 0.25; }
+  100%    { transform: scale(3.2); opacity: 0;    border-color: rgba(255, 255, 255, 0.9); }
+}
+@keyframes ring-out-b {
+  0%      { transform: scale(0.6); opacity: 0.9;  border-color: rgba(255, 255, 255, 0.9); }  /* white */
+  23.33%  { opacity: 0.25; }
+  33.33%  { transform: scale(3.2); opacity: 0;    border-color: rgba(255, 255, 255, 0.9); }
+  33.34%  { transform: scale(0.6); opacity: 0.9;  border-color: rgba(195, 255, 61, 0.9); }   /* lime */
+  56.66%  { opacity: 0.25; }
+  66.66%  { transform: scale(3.2); opacity: 0;    border-color: rgba(195, 255, 61, 0.9); }
+  66.67%  { transform: scale(0.6); opacity: 0.9;  border-color: rgba(255, 70, 70, 0.9); }    /* red */
+  90%     { opacity: 0.25; }
+  100%    { transform: scale(3.2); opacity: 0;    border-color: rgba(255, 70, 70, 0.9); }
 }
 body.playmode .hotspot .label { opacity: 1; }
 body.playmode .hotspot .star { background: var(--ink); filter: drop-shadow(0 0 4px rgba(232, 236, 244, 0.5)); }
